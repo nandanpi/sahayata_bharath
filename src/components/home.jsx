@@ -3,8 +3,8 @@ import Image from "../govschefy.jpg";
 const Home = () => {
     return(
         <>
-            <div className=" space-y-2">
-                <img src={Image} alt="" className=" rounded-b-xl"/>
+            <div>
+                <img src={Image} alt="#"/>
             </div>
         </>
     )
