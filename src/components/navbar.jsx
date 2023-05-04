@@ -26,7 +26,7 @@ const Navbar = ()=>{
                     </li>
                 </ul>
                 <div className="block md:hidden"><Switcher /></div>
-                <div className={!nav ? 'm-3 fixed left-0 top-20 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl':' ease-out duration-1000 fixed top-20 left-[-100%]'}>
+                <div className={!nav ? ' absolute m-3 fixed left-0 top-20 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl':' ease-out duration-1000 fixed top-20 left-[-100%]'}>
                     <ul className=" uppercase">
                     <li className="p-4 text-teal dark:text-blue"><a href="/">Home</a></li>
                     <li className="p-4 text-teal dark:text-blue"><a href="/lsche">Local Schemes</a></li>

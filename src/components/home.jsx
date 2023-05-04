@@ -3,8 +3,9 @@ import Image from "../govschefy.jpg";
 const Home = () => {
     return(
         <>
-            <div>
-                <img src={Image} alt="#"/>
+            <div className="m-3">
+                <img src={Image} alt="#" className=" rounded-xl"/>
+                
             </div>
         </>
     )

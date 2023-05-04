@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import {BsThreeDots,BsThreeDotsVertical} from "react-icons/bs"; 
+import ScrollToTopButton from "./scrollToTop";
 
 const Nsche = () => {
     const [ph,setph] = useState(true)
@@ -85,7 +86,7 @@ const Nsche = () => {
 
     return(
         <>
-        <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl">
+        <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl absolute">
             <ul className="flex text-teal dark:text-blue items-center justify-center">
                 <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Finance</li> 
                 <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Healthcare</li>
@@ -235,6 +236,7 @@ const Nsche = () => {
           <li className="p-3"><a href="http://dfpd.gov.in/pds-aay.htm" target="_blank" rel="noopener noreferrer">Antyodaya Anna Yojana (AAY): This scheme provides food grains to bpl families at a highly subsidized rate of Rs.2/- per kg. for wheat and Rs.3/- per kg for rice.</a></li>
                 </ul>
             </div>}
+            <div><ScrollToTopButton /></div>
         </>
     )
 

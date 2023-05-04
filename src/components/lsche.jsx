@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import {BsThreeDots,BsThreeDotsVertical} from "react-icons/bs"; 
+import ScrollToTopButton from "./scrollToTop";
 
 const Lsche = () => {
     const [ph,setph] = useState(true)
@@ -92,7 +93,7 @@ const Lsche = () => {
                 <li onClick={handleph} className="p-5 cursor-pointer">{!ph ? <BsThreeDotsVertical size={23}/>:<BsThreeDots size={23} />}</li>
             </ul>    
         </div>
-        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl text-teal dark:text-blue':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
+        <div className={!ph ? ' shadow-2xl absolute mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl text-teal dark:text-blue':' ease-out duration-700 fixed top-40 left-[-100%]'}>
                     <ul>
                     <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare</li>
                     <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming</li> 
@@ -234,6 +235,7 @@ const Lsche = () => {
                 <li className="p-3"><a href="http://landrecords.karnataka.gov.in/service53/" target="_blank" rel="noopener noreferrer">Bhoomi RTC: This scheme provides an online platform for citizens to access land records and other related information.</a></li>
                 </ul>
             </div>}
+            <div><ScrollToTopButton /></div>
         </>
     )
 
