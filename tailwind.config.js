@@ -8,6 +8,9 @@ module.exports = {
         '5px': '5px'
       }
     },
+    listStyleType: {
+      disc: 'disc',
+    },
     colors:{
       'beige':'#f5f5dc',
       'teal':'#008080',

@@ -4,7 +4,7 @@ const Home = () => {
     return(
         <>
             <div className=" space-y-2">
-                <img src={Image} alt="" className="rounded-xl"/>
+                <img src={Image} alt="" className=" rounded-b-xl"/>
             </div>
         </>
     )

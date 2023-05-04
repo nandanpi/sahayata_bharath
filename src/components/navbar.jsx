@@ -11,7 +11,7 @@ const Navbar = ()=>{
 
     return(
         
-            <div className=" bg-beige dark:bg-grey rounded-2xl flex justify-between items-center h-24 px-4 max-w-[1850px] mx-auto">
+            <div className=" bg-beige dark:bg-grey flex justify-between items-center h-24 px-4 max-w-[1850px] m-3 rounded-xl">
                 <div onClick={handleNav} className=" block md:hidden">
                 {!nav ? <AiOutlineClose size={25}/>:<AiOutlineMenu size={25} />}  
                 </div>
@@ -26,12 +26,12 @@ const Navbar = ()=>{
                     </li>
                 </ul>
                 <div className="block md:hidden"><Switcher /></div>
-                <div className={!nav ? 'fixed left-0 top-20 w-[60%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700':' ease-out duration-1000 fixed top-20 left-[-100%]'}>
+                <div className={!nav ? 'fixed left-0 top-20 w-[45%] bg-beige dark:bg-grey rounded-br-xl h-95 ease-in duration-700 shadow-2xl':' ease-out duration-1000 fixed top-20 left-[-100%]'}>
                     <ul className=" uppercase">
-                    <li className="p-4"><a href="/">Home</a></li>
-                    <li className="p-4"><a href="/lsche">Local Schemes</a></li>
-                    <li className="p-4"><a href="/nsche">National Schemes</a></li>
-                    <li className="p-4"><a href="/about">About</a></li> 
+                    <li className="p-4 text-teal dark:text-blue"><a href="/">Home</a></li>
+                    <li className="p-4 text-teal dark:text-blue"><a href="/lsche">Local Schemes</a></li>
+                    <li className="p-4 text-teal dark:text-blue"><a href="/nsche">National Schemes</a></li>
+                    <li className="p-4 text-teal dark:text-blue"><a href="/about">About</a></li> 
                     </ul>
                 </div>
             </div>
