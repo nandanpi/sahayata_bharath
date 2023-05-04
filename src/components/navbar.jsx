@@ -1,6 +1,4 @@
 import React,{useState} from "react";
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import {CgDarkMode} from 'react-icons/cg'
 import { Link } from "react-router-dom";
 import Switcher from '../Switcher.js';
 const Navbar = ()=>{
