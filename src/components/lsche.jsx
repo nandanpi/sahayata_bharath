@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import {BsThreeDots,BsThreeDotsVertical} from "react-icons/bs"; 
+
 const Lsche = () => {
     const [ph,setph] = useState(true)
     const handleph = () => {
@@ -85,28 +86,28 @@ const Lsche = () => {
     return(
         <>
         <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl">
-            <ul className="flex">
-                <li onClick={handleShowDiv1} className="p-5 pl-10 cursor-pointer">Food Schemes</li> 
-                <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service Schemes</li>
-                <li onClick={handleph} className="pt-5 pl-8 cursor-pointer">{!ph ? <BsThreeDotsVertical size={23}/>:<BsThreeDots size={23} />}</li>
+            <ul className="flex text-teal dark:text-blue items-center justify-center">
+                <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Food</li> 
+                <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service</li>
+                <li onClick={handleph} className="p-5 cursor-pointer">{!ph ? <BsThreeDotsVertical size={23}/>:<BsThreeDots size={23} />}</li>
             </ul>    
         </div>
-        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
+        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl text-teal dark:text-blue':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
                     <ul>
-                    <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare Schemes</li>
-                    <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming Schemes</li> 
-                    <li onClick={handleShowDiv5} className="p-5 cursor-pointer">Finance Schemes</li> 
+                    <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare</li>
+                    <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming</li> 
+                    <li onClick={handleShowDiv5} className="p-5 cursor-pointer">Finance</li> 
                     <li onClick={handleShowDiv6} className="p-5 cursor-pointer">Others</li>
                     <li onClick={handleShowDiv7} className="p-5 cursor-pointer">All</li>
                     </ul>
                 </div>
           <div className=" bg-beige dark:bg-grey text m-3 rounded-xl ">
                 <ul className="hidden md:flex text-teal dark:text-blue space-x-4 items-center justify-center">
-                    <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Food Schemes</li> 
-                    <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service Schemes</li>
-                    <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare Schemes</li>
-                    <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming Schemes</li> 
-                    <li onClick={handleShowDiv5} className="p-5 cursor-pointer">Finance Schemes</li> 
+                    <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Food</li> 
+                    <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service</li>
+                    <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare</li>
+                    <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming</li> 
+                    <li onClick={handleShowDiv5} className="p-5 cursor-pointer">Finance</li> 
                     <li onClick={handleShowDiv6} className="p-5 cursor-pointer">Others</li>
                     <li onClick={handleShowDiv7} className="p-5 cursor-pointer">All</li>
                 </ul>
@@ -188,7 +189,7 @@ const Lsche = () => {
                 </li>
                 <li className="p-3"><a href="http://arogya.karnataka.gov.in/sast/" target="_blank" rel="noopener noreferrer">Suvarna Arogya Suraksha Trust: This scheme provides health insurance to economically weaker families in the state.</a> 
                 </li>
-                <li><a href="https://www.pradhanmantriyojana.co.in/cm-santwana-harish-yojana/" target="_blank" rel="noopener noreferrer">Mukhyamantri Santwana Harish Scheme: This scheme provides financial assistance to road accident victims for their medical treatment and hospitalization expenses.</a></li></ul>
+                <li className="p-3"><a href="https://www.pradhanmantriyojana.co.in/cm-santwana-harish-yojana/" target="_blank" rel="noopener noreferrer">Mukhyamantri Santwana Harish Scheme: This scheme provides financial assistance to road accident victims for their medical treatment and hospitalization expenses.</a></li></ul>
             </div>}
             { showDiv4 && <div id="div4" className="elements bg-beige dark:bg-grey text-teal dark:text-blue space-y-2 rounded-xl mx-3">
                 <ul className=" p-5 list-disc list-inside text-justify">
