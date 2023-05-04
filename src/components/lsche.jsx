@@ -1,7 +1,10 @@
 import React,{useState} from "react";
-
+import {BsThreeDots,BsThreeDotsVertical} from "react-icons/bs"; 
 const Lsche = () => {
-
+    const [ph,setph] = useState(true)
+    const handleph = () => {
+        setph(!ph)
+    }
   const [showDiv1, setShowDiv1] = useState(false);
   const [showDiv2, setShowDiv2] = useState(false);
   const [showDiv3, setShowDiv3] = useState(false);
@@ -81,8 +84,24 @@ const Lsche = () => {
 
     return(
         <>
+        <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl">
+            <ul className="flex">
+                <li onClick={handleShowDiv1} className="p-5 pl-10 cursor-pointer">Food Schemes</li> 
+                <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service Schemes</li>
+                <li onClick={handleph} className="pt-5 pl-8 cursor-pointer">{!ph ? <BsThreeDotsVertical size={23}/>:<BsThreeDots size={23} />}</li>
+            </ul>    
+        </div>
+        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
+                    <ul>
+                    <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare Schemes</li>
+                    <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Farming Schemes</li> 
+                    <li onClick={handleShowDiv5} className="p-5 cursor-pointer">Finance Schemes</li> 
+                    <li onClick={handleShowDiv6} className="p-5 cursor-pointer">Others</li>
+                    <li onClick={handleShowDiv7} className="p-5 cursor-pointer">All</li>
+                    </ul>
+                </div>
           <div className=" bg-beige dark:bg-grey text m-3 rounded-xl ">
-                <ul className="flex text-teal dark:text-blue space-x-4 items-center justify-center">
+                <ul className="hidden md:flex text-teal dark:text-blue space-x-4 items-center justify-center">
                     <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Food Schemes</li> 
                     <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Service Schemes</li>
                     <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Healthcare Schemes</li>
@@ -94,7 +113,6 @@ const Lsche = () => {
             </div>
         { showDiv7 && <div id="div7 " className="elements bg-beige dark:bg-grey text-teal dark:text-blue space-y-2 rounded-xl mx-3">
             <ul className=" p-5 list-disc list-inside text-justify">
-                <li className="p-3"><a href="http://landrecords.karnataka.gov.in/service53/" target="_blank" rel="noopener noreferrer">Bhoomi RTC: This scheme provides an online platform for citizens to access land records and other related information.</a></li>
                 <li className="p-3"><a href="https://www.kmfnandini.coop/en/ksheera-bhagya" target="_blank" rel="noopener noreferrer">Ksheera Bhagya Yojana: This scheme provides free milk to school children in the state.</a> 
                 </li>
                 <li className="p-3"><a href="https://en.wikipedia.org/wiki/Indira_Canteens" target="_blank" rel="noopener noreferrer">Indira Canteen Scheme: This scheme provides affordable meals to urban poor people in Bangalore and other cities in the state.</a> 
