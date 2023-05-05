@@ -86,14 +86,14 @@ const Nsche = () => {
 
     return(
         <>
-        <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl absolute">
+        <div className=" block md:hidden bg-beige dark:bg-grey m-3 rounded-xl">
             <ul className="flex text-teal dark:text-blue items-center justify-center">
                 <li onClick={handleShowDiv1} className="p-5 cursor-pointer">Finance</li> 
                 <li onClick={handleShowDiv2} className="p-5 cursor-pointer">Healthcare</li>
                 <li onClick={handleph} className=" p-5 cursor-pointer">{!ph ? <BsThreeDotsVertical size={23}/>:<BsThreeDots size={23} />}</li>
             </ul>    
         </div>
-        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl text-teal dark:text-blue':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
+        <div className={!ph ? 'mr-3 fixed right-0 top-40 w-[45%] bg-beige dark:bg-grey rounded-xl h-95 ease-in duration-700 shadow-2xl text-teal dark:text-blue absolute':' ease-out duration-1000 fixed top-40 left-[-100%]'}>
                     <ul>
                     <li onClick={handleShowDiv3} className="p-5 cursor-pointer">Employment </li>
                     <li onClick={handleShowDiv4} className="p-5 cursor-pointer">Agricultural</li> 

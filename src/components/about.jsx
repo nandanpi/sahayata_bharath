@@ -19,7 +19,7 @@ The idea behind the creation of this website is to simplify the process of apply
 
 This website is designed by 5 students of AI&ML branch of NMAMIT NITTE:<br /><br />
 NANDAN R PAI-NNM22AM033<br />
-NAGAVARAPU SAARVARI-NNM22AM032<br />
+N. SAARVARI-NNM22AM032<br />
 NINAAD LOBO-NNM22AM035<br />
 MAYUR V UDUPA-NNM22AM031<br />
 NIBHA S RAO-NNM22AM034<br />
