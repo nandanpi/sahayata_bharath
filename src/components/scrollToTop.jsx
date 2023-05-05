@@ -28,7 +28,7 @@ const ScrollToTopButton = () => {
         showButton ? "opacity-100" : "opacity-0"
       } fixed bottom-6 right-6 bg-gray-800 p-3 rounded-full transition-opacity duration-300 ease-in-out`}
     >
-      <ChevronUpIcon className="h-6 w-6 text-white" />
+      <ChevronUpIcon className="h-6 w-6 text-teal dark:text-blue" />
     </button>
   );
 };

@@ -235,7 +235,7 @@ const Lsche = () => {
                 <li className="p-3"><a href="http://landrecords.karnataka.gov.in/service53/" target="_blank" rel="noopener noreferrer">Bhoomi RTC: This scheme provides an online platform for citizens to access land records and other related information.</a></li>
                 </ul>
             </div>}
-            <div><ScrollToTopButton /></div>
+            <div className=" text-teal dark:text-blue"><ScrollToTopButton /></div>
         </>
     )
 

@@ -236,7 +236,7 @@ const Nsche = () => {
           <li className="p-3"><a href="http://dfpd.gov.in/pds-aay.htm" target="_blank" rel="noopener noreferrer">Antyodaya Anna Yojana (AAY): This scheme provides food grains to bpl families at a highly subsidized rate of Rs.2/- per kg. for wheat and Rs.3/- per kg for rice.</a></li>
                 </ul>
             </div>}
-            <div><ScrollToTopButton /></div>
+            <div className=" text-teal dark:text-blue"><ScrollToTopButton /></div>
         </>
     )
 
