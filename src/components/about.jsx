@@ -16,13 +16,7 @@ When the user clicks a particular scheme, they are redirected to the official we
 This website also has the option to filter the type of scheme required making it more accessible and quicker. For example, if the user wants to see the latest food or education schemes announced by the government of India then he/she can click on the filter for food or education options to narrow it down to get the schemes related to them. <br /><br />
 Covering the visual aspect of the website, our team decided on this design that works both in light and dark modes. Keeping in mind the multi cultures of our country, we have given it a local touch by including regional languages. Currently, we have released Kannada and Hindi options along with the generic language that is English. As the website picks up its viewership our team has planned to grow it with other regional languages and the local schemes of the other states. <br /><br />
 The idea behind the creation of this website is to simplify the process of applying for these benefits by bringing awareness among citizens to try and bridge the knowledge gap in this sector.<br /><br />
-
-This website is designed by 5 students of AI&ML branch of NMAMIT NITTE:<br /><br />
-NANDAN R PAI-NNM22AM033<br />
-N. SAARVARI-NNM22AM032<br />
-NINAAD LOBO-NNM22AM035<br />
-MAYUR V UDUPA-NNM22AM031<br />
-NIBHA S RAO-NNM22AM034<br />
+Dev:Nandan R Pai
         </p>
         </div>
 
