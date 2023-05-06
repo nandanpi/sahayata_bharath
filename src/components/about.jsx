@@ -5,7 +5,7 @@ const About = () => {
     return(
         <>
         <div className=" bg-beige dark:bg-grey text-teal dark:text-blue m-3 rounded-xl">
-            <h1 className="p-5 font-cold underline text-4xl text-center">ABOUT SAHAYATA BHARATH</h1>
+            <h1 className="p-5 font-bold  text-4xl text-center">ABOUT SAHAYATA BHARATH</h1>
             <p className="p-5 text-justify justify-evenly text-xl">In recent years a large number of government schemes and policies have been launched to benefit the poor and the underprivileged public. Indian Government, at all levels, announces Welfare Schemes for a cross section of the society from time to time. These schemes could be either Central, State specific or a joint collaboration between the Centre and the States. However, a lot of them are underperforming or have been stopped due to the lack of reciprocation from the public.<br /><br />
 Our group identified the main issue for this which is lack of information and awareness among the general public. The target audience of these schemes simply aren't aware that these schemes exist, the proper utilization of these schemes can provide a major boost to our economy. <br /><br />
 
